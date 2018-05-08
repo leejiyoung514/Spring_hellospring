@@ -88,7 +88,7 @@ public class HelloController {  //주소를 정의하는 곳
 	
 	@RequestMapping(value="/userlist",  method=RequestMethod.GET)
 	public String list(Model model, HttpServletRequest request, HttpSession session) {
-		session.setAttribute("authUser", authUser);
+	/*	session.setAttribute("authUser", authUser);*/
 		
 		List<UserVo> userList=new ArrayList<UserVo>();
 		UserVo user01=new UserVo(11,"지영");
